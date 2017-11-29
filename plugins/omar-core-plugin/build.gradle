@@ -9,7 +9,7 @@ buildscript{
   }
   repositories{
     mavenLocal()
-    maven { url "${ossimMavenProxy}" }
+    maven { url System.env.ossimMavenProxy }
     maven { url "https://repo.grails.org/grails/core" }
   }
   dependencies{
@@ -43,7 +43,7 @@ repositories {
   maven { url "https://dl.bintray.com/ajay-kumar/plugins" }
   maven { url  "http://dl.bintray.com/dmahapatro/plugins" }
   mavenLocal()
-  maven { url "${ossimMavenProxy}" }
+  maven { url System.env.ossimMavenProxy }
   maven { url "https://repo.grails.org/grails/core" }
 }
 
